@@ -1,0 +1,9 @@
+coverage:
+  precision: 0
+  round: nearest
+  range: 50...100
+
+ignore:
+  - "tests/*"
+  - "benchmarks/*"
+  - "docs/*"
