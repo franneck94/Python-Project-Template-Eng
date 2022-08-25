@@ -13,7 +13,6 @@ This is a template for Python projects. What you get:
 - Source code and test code is seperated in different directories.
 - External libraries installed and managed by [Pip](https://pypi.org/project/pip/).
 - Setup for tests using [Pytest](https://docs.pytest.org/en/stable/).
-- Bechmark tests using [Pytest-Benchmark](https://github.com/ionelmc/pytest-benchmark)
 - Continuous testing with [Github-Actions](https://github.com/features/actions/).
 - Code coverage reports, including automatic upload to [Codecov](https://codecov.io).
 - Code documentation with [Mkdocs](https://www.mkdocs.org/).
@@ -36,9 +35,6 @@ This is a template for Python projects. What you get:
 │   ├── __init__.py
 │   ├── vector.py
 │   └── version.py
-└── benchmarks
-│   ├── __init__.py
-│   └── test_computations.py
 └── tests
     ├── __init__.py
     └── test_vector.py
@@ -59,9 +55,4 @@ pytest tests
 ```bash
 # Code Coverage
 pytest --cov=fastvector tests --cov-report=html
-```
-
-```bash
-# Benchmarks
-pytest --benchmark-columns=min,max,mean,stddev --benchmark-sort=mean benchmarks
 ```
